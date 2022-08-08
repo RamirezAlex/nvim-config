@@ -51,7 +51,6 @@ return require('packer').startup(function(use)
 		requires = {
 			'kyazdani42/nvim-web-devicons', -- optional, for file icon
 		},
-		-- config = function() require'nvim-tree'.setup {} end
 	}
 
 	-- Git stuff
@@ -63,6 +62,9 @@ return require('packer').startup(function(use)
 	-- Time Pope is a god
 	use 'tpope/vim-surround'
 	use 'tpope/vim-fugitive'
+
+  -- Toggle Term
+  use {"akinsho/toggleterm.nvim", tag = 'v2.*' }
 
 	-- Yanking manager (yeah yeah I know, registers exist)
 	use {
