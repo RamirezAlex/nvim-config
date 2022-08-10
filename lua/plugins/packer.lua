@@ -101,4 +101,7 @@ return require('packer').startup(function(use)
 	-- Typescript. Oh Typescript. Where art thou Typescript.
 	use 'jose-elias-alvarez/null-ls.nvim'
 	use 'jose-elias-alvarez/nvim-lsp-ts-utils'
+
+  use { "numToStr/Comment.nvim" }
+  use { "JoosepAlviste/nvim-ts-context-commentstring"}
 end)
