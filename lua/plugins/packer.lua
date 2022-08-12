@@ -64,11 +64,15 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-fugitive'
 
   -- Toggle Term
-  use {"akinsho/toggleterm.nvim", tag = 'v2.*' }
+  use {'akinsho/toggleterm.nvim', tag = 'v2.*' }
+
+  -- bufferline
+  use 'akinsho/bufferline.nvim'
+  use 'moll/vim-bbye'
 
 	-- Yanking manager (yeah yeah I know, registers exist)
 	use {
-		"AckslD/nvim-neoclip.lua",
+		'AckslD/nvim-neoclip.lua',
 		requires = { {'nvim-telescope/telescope.nvim'} },
 		config = function()
 			require('neoclip').setup()
@@ -96,12 +100,12 @@ return require('packer').startup(function(use)
 		--end,
 	--}
 
-	use {'mg979/vim-visual-multi'}
+	use 'mg979/vim-visual-multi'
 
 	-- Typescript. Oh Typescript. Where art thou Typescript.
 	use 'jose-elias-alvarez/null-ls.nvim'
 	use 'jose-elias-alvarez/nvim-lsp-ts-utils'
 
-  use { "numToStr/Comment.nvim" }
-  use { "JoosepAlviste/nvim-ts-context-commentstring"}
+  use 'numToStr/Comment.nvim'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 end)
