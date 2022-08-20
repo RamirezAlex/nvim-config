@@ -9,4 +9,14 @@ vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', options)
 -- Escape maps to a rolling jk
 vim.api.nvim_set_keymap('i', 'jk', '<ESC>', options)
 vim.api.nvim_set_keymap('i', 'jj', '<ESC>', options)
+-- Navigate buffers
+vim.api.nvim_set_keymap("n", "<S-l>", ":bnext<CR>", options)
+vim.api.nvim_set_keymap("n", "<S-h>", ":bprevious<CR>", options)
+
+-- Clear highlights
+vim.api.nvim_set_keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", options)
+
+-- Close buffers
+vim.api.nvim_set_keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", options)
+
 
