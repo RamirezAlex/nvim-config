@@ -24,8 +24,9 @@ return require('packer').startup(function(use)
 	use 'L3MON4D3/LuaSnip'
 	use 'saadparwaiz1/cmp_luasnip'
 
-	-- Load spicy gruvbox color theme
+	-- Colorschemes 
 	use 'gruvbox-community/gruvbox'
+  use "EdenEast/nightfox.nvim"
 
 	-- Treesitter is life
 	use {
