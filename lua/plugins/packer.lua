@@ -71,6 +71,9 @@ return require('packer').startup(function(use)
   use 'akinsho/bufferline.nvim'
   use 'moll/vim-bbye'
 
+  -- GitHub CoPilot
+  use 'github/copilot.vim'
+
 	-- Yanking manager (yeah yeah I know, registers exist)
 	use {
 		'AckslD/nvim-neoclip.lua',

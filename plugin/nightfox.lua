@@ -33,4 +33,4 @@ require('nightfox').setup({
   groups = {},
 })
 
-vim.cmd("colorscheme terafox")
+-- vim.cmd("colorscheme terafox")

@@ -29,7 +29,7 @@ cmp.setup({
 		}),
 		['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 
-		["<Tab>"] = cmp.mapping(function(fallback)
+		["<CR-Tab>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
 			elseif luasnip.expand_or_jumpable() then
@@ -85,8 +85,11 @@ cmp.setup.cmdline(':', {
 	})
 })
 
--- Setup lspconfig.
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+-- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
--- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-require('lspconfig')['gopls'].setup {}
+-- The following example advertise capabilities to `clangd`.
+require'lspconfig'.clangd.setup {
+  capabilities = capabilities,
+}
+
