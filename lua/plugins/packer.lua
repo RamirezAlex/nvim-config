@@ -26,7 +26,8 @@ return require('packer').startup(function(use)
 
 	-- Colorschemes 
 	use 'gruvbox-community/gruvbox'
-  use "EdenEast/nightfox.nvim"
+  use 'EdenEast/nightfox.nvim'
+  use 'folke/tokyonight.nvim'
 
 	-- Treesitter is life
 	use {
@@ -70,6 +71,8 @@ return require('packer').startup(function(use)
   -- bufferline
   use 'akinsho/bufferline.nvim'
   use 'moll/vim-bbye'
+
+  use 'christoomey/vim-tmux-navigator'
 
   -- GitHub CoPilot
   use 'github/copilot.vim'
