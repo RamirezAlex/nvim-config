@@ -26,8 +26,8 @@ return require('packer').startup(function(use)
 
 	-- Colorschemes 
 	use 'gruvbox-community/gruvbox'
-  use 'EdenEast/nightfox.nvim'
   use 'folke/tokyonight.nvim'
+  -- use 'Mofiqul/dracula.nvim'
 
 	-- Treesitter is life
 	use {
@@ -61,6 +61,14 @@ return require('packer').startup(function(use)
 
 	-- Git stuff
 	use 'airblade/vim-gitgutter'
+
+  -- Git signs
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
 
 	-- comment stuff out
 	use 'preservim/nerdcommenter'

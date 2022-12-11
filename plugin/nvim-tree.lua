@@ -64,6 +64,14 @@ nvim_tree.setup {
       },
     },
   },
+  filters = {
+    dotfiles = false,
+  },
+  git = {
+    enable = true,
+    ignore = false,
+    timeout = 500,
+  }
 }
 
 vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle <CR>', { noremap = true })
