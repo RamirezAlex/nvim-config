@@ -27,7 +27,13 @@ return require('packer').startup(function(use)
 	-- Colorschemes 
 	use 'gruvbox-community/gruvbox'
   use 'folke/tokyonight.nvim'
-  -- use 'Mofiqul/dracula.nvim'
+  use {
+    'https://gitlab.com/__tpb/monokai-pro.nvim',
+    as = 'monokai-pro.nvim'
+  }
+  use "olimorris/onedarkpro.nvim"
+  use 'Julpikar/night-owl.nvim'
+  use 'Mofiqul/dracula.nvim'
 
 	-- Treesitter is life
 	use {
