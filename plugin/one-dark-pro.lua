@@ -17,5 +17,5 @@ require('onedarkpro').setup({
   },
 })
 
-vim.cmd('colorscheme onedark_dark') -- or onedark_vivid or onedark or onelight
+-- vim.cmd('colorscheme onedark_dark') -- or onedark_vivid or onedark or onelight
 

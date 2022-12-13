@@ -31,9 +31,10 @@ return require('packer').startup(function(use)
     'https://gitlab.com/__tpb/monokai-pro.nvim',
     as = 'monokai-pro.nvim'
   }
-  use "olimorris/onedarkpro.nvim"
+  use 'olimorris/onedarkpro.nvim'
   use 'Julpikar/night-owl.nvim'
   use 'Mofiqul/dracula.nvim'
+  use 'EdenEast/nightfox.nvim'
 
 	-- Treesitter is life
 	use {
