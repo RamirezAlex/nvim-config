@@ -133,4 +133,10 @@ return require('packer').startup(function(use)
 
   use 'numToStr/Comment.nvim'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
+
+  -- Vim Be Good game
+  use 'ThePrimeagen/vim-be-good'
+
+  -- Colored brackets
+  use 'p00f/nvim-ts-rainbow'
 end)
