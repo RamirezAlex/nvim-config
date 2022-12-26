@@ -35,6 +35,13 @@ return require('packer').startup(function(use)
   use 'Julpikar/night-owl.nvim'
   use 'Mofiqul/dracula.nvim'
   use 'EdenEast/nightfox.nvim'
+  use({
+      'NycRat/rose-pine',
+      as = 'rose-pine',
+      config = function()
+          vim.cmd('colorscheme rose-pine')
+      end
+  })
 
 	-- Treesitter is life
 	use {
