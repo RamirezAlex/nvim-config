@@ -32,3 +32,6 @@ vim.api.nvim_set_keymap("n", "<leader>wq", "<cmd>wq<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>q", "<cmd>q<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>qa", "<cmd>qa<CR>", options)
 
+-- ChatGPT
+vim.api.nvim_set_keymap("n", "<leader>gp", ":ChatGPT<CR>", options)
+vim.api.nvim_set_keymap("n", "<leader>ga", ":ChatGPTActAs<CR>", options)

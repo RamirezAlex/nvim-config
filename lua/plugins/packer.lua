@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
           vim.cmd('colorscheme rose-pine')
       end
   })
+  use { 'catppuccin/nvim', as = 'catppuccin' }
 
 	-- Treesitter is life
 	use {
@@ -150,16 +151,16 @@ return require('packer').startup(function(use)
 
   -- ChatGPT
   use({
-  "jackMort/ChatGPT.nvim",
+  'jackMort/ChatGPT.nvim',
     config = function()
-      require("chatgpt").setup({
+      require('chatgpt').setup({
         -- optional configuration
       })
     end,
     requires = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim"
+      'MunifTanjim/nui.nvim',
+      'nvim-lua/plenary.nvim',
+      'nvim-telescope/telescope.nvim'
     }
   })
 end)
