@@ -24,27 +24,7 @@ return require('packer').startup(function(use)
 	use 'L3MON4D3/LuaSnip'
 	use 'saadparwaiz1/cmp_luasnip'
 
-	-- Colorschemes 
-	use 'gruvbox-community/gruvbox'
-  use 'folke/tokyonight.nvim'
-  use {
-    'https://gitlab.com/__tpb/monokai-pro.nvim',
-    as = 'monokai-pro.nvim'
-  }
-  use 'olimorris/onedarkpro.nvim'
-  use 'Julpikar/night-owl.nvim'
-  use 'Mofiqul/dracula.nvim'
-  use 'EdenEast/nightfox.nvim'
-  use({
-      'NycRat/rose-pine',
-      as = 'rose-pine',
-      config = function()
-          vim.cmd('colorscheme rose-pine')
-      end
-  })
-  use { 'catppuccin/nvim', as = 'catppuccin' }
-
-	-- Treesitter is life
+-- Treesitter is life
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
@@ -163,4 +143,20 @@ return require('packer').startup(function(use)
       'nvim-telescope/telescope.nvim'
     }
   })
+
+	-- Colorschemes
+	use 'gruvbox-community/gruvbox'
+  use 'folke/tokyonight.nvim'
+  use { 'https://gitlab.com/__tpb/monokai-pro.nvim', as = 'monokai-pro.nvim' }
+  use 'olimorris/onedarkpro.nvim'
+  use 'Julpikar/night-owl.nvim'
+  use 'Mofiqul/dracula.nvim'
+  use 'EdenEast/nightfox.nvim'
+  use { 'rose-pine/neovim', as = 'rose-pine-' }
+  use { 'catppuccin/nvim', as = 'catppuccin' }
+  use { 'bluz71/vim-moonfly-colors', as = 'moonfly' }
+
+  vim.cmd.colorscheme 'catppuccin-mocha'
+
 end)
+
