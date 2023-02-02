@@ -15,4 +15,5 @@ vim.api.nvim_set_keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>', options
 vim.api.nvim_set_keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', options)
 vim.api.nvim_set_keymap('n', '<leader>fr', '<cmd>Telescope resume<cr>', options)
 vim.api.nvim_set_keymap('n', '<leader>fs', '<cmd>Telescope grep_string<cr>', options)
+vim.api.nvim_set_keymap('n', '<leader>fd', '<cmd>Telescope diagnostics<cr>', options)
 
