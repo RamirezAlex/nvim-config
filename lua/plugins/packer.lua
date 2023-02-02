@@ -65,6 +65,8 @@ return require('packer').startup(function(use)
     end
   }
 
+  -- use 'christoomey/vim-tmux-navigator'
+
 	-- comment stuff out
 	use 'preservim/nerdcommenter'
 
@@ -78,8 +80,6 @@ return require('packer').startup(function(use)
   -- bufferline
   use 'akinsho/bufferline.nvim'
   use 'moll/vim-bbye'
-
-  use 'christoomey/vim-tmux-navigator'
 
   -- GitHub CoPilot
   use 'github/copilot.vim'
