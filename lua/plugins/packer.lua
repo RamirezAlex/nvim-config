@@ -65,7 +65,7 @@ return require('packer').startup(function(use)
     end
   }
 
-  -- use 'christoomey/vim-tmux-navigator'
+  use 'christoomey/vim-tmux-navigator'
 
 	-- comment stuff out
 	use 'preservim/nerdcommenter'
