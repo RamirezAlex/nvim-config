@@ -36,6 +36,14 @@ vim.api.nvim_set_keymap("n", "<leader>qa", "<cmd>qa<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>gp", ":ChatGPT<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>ga", ":ChatGPTActAs<CR>", options)
 
--- LazyGit
+
+-- ToggleTerm - LazyGit
+vim.api.nvim_set_keymap("n", "<leader>tt", "<cmd>lua _TERMINAL_TOGGLE()<CR>", options)
+vim.api.nvim_set_keymap("t", "<leader>tt", "<cmd>lua _TERMINAL_TOGGLE()<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", options)
+vim.api.nvim_set_keymap("t", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", options)
+
+-- Copilot
+vim.api.nvim_set_keymap("n", "<leader>cd", ":Copilot disable<CR>", options)
+vim.api.nvim_set_keymap("n", "<leader>ce", ":Copilot enable<CR>", options)
 
