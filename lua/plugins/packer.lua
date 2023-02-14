@@ -155,6 +155,10 @@ return require('packer').startup(function(use)
   use { 'rose-pine/neovim', as = 'rose-pine-' }
   use { 'catppuccin/nvim', as = 'catppuccin' }
   use { 'bluz71/vim-moonfly-colors', as = 'moonfly' }
+  use { 'embark-theme/vim', as = 'embark' }
+  use 'rebelot/kanagawa.nvim'
+  use 'sainnhe/everforest'
+
 
   vim.cmd.colorscheme 'catppuccin-mocha'
 
