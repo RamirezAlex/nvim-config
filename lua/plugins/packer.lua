@@ -144,6 +144,9 @@ return require('packer').startup(function(use)
     }
   })
 
+  -- Markdown preview
+  use 'iamcco/markdown-preview.nvim'
+
 	-- Colorschemes
 	use 'gruvbox-community/gruvbox'
   use 'folke/tokyonight.nvim'
