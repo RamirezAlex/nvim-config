@@ -6,12 +6,10 @@ vim.g.mapleader = " "
 require "globals.options"
 require "globals.remaps"
 
-require "lsp.lsp"
-
 require 'plugins.lazy'
 
 -- Local dev of nvim-go
-require 'nvim-go'.setup()
+-- require 'nvim-go'.setup()
 
 --vim.api.nvim_create_autocmd({"BufWrite"}, {
 	--pattern = {"*.go"},

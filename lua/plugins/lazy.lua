@@ -25,20 +25,20 @@ local plugins = {
   'L3MON4D3/LuaSnip',
   'saadparwaiz1/cmp_luasnip',
   -- Treesitter is life
-  {
-		'nvim-treesitter/nvim-treesitter',
-		run = ':TSUpdate'
-	},
+  --  {
+  --    'nvim-treesitter/nvim-treesitter',
+  --    run = ':TSUpdate'
+  --  },
 	-- Gaze deeply into the unknown
   {
 		'nvim-telescope/telescope.nvim',
 		dependencies = { {'nvim-lua/plenary.nvim'} }
 	},
 	-- Use fzf native for telescope
-  {
-		'nvim-telescope/telescope-fzf-native.nvim',
-		run = 'make'
-	},
+  --  {
+  --    'nvim-telescope/telescope-fzf-native.nvim',
+  --    run = 'make'
+  --  },
 	-- nvim file tree. Alternative to NerdTree
   {
 		'kyazdani42/nvim-tree.lua',
@@ -95,11 +95,11 @@ local plugins = {
   'jose-elias-alvarez/null-ls.nvim',
   'jose-elias-alvarez/nvim-lsp-ts-utils',
   'numToStr/Comment.nvim',
-  'JoosepAlviste/nvim-ts-context-commentstring',
+  --'JoosepAlviste/nvim-ts-context-commentstring',
   -- Vim Be Good game
   'ThePrimeagen/vim-be-good',
   -- Colored brackets
-  'p00f/nvim-ts-rainbow',
+  --'p00f/nvim-ts-rainbow',
   -- ChatGPT
   {
   'jackMort/ChatGPT.nvim',
@@ -119,15 +119,15 @@ local plugins = {
 	-- Colorschemes
 	'gruvbox-community/gruvbox',
   'folke/tokyonight.nvim',
-  { 'https://gitlab.com/__tpb/monokai-pro.nvim', as = 'monokai-pro.nvim' },
+  { 'https://gitlab.com/__tpb/monokai-pro.nvim', name = 'monokai-pro.nvim' },
   'olimorris/onedarkpro.nvim',
   'Julpikar/night-owl.nvim',
   'Mofiqul/dracula.nvim',
   'EdenEast/nightfox.nvim',
-  { 'rose-pine/neovim', as = 'rose-pine-' },
-  { 'catppuccin/nvim', as = 'catppuccin' },
-  { 'bluz71/vim-moonfly-colors', as = 'moonfly' },
-  { 'embark-theme/vim', as = 'embark' },
+  { 'rose-pine/neovim', name = 'rose-pine-' },
+  { 'catppuccin/nvim', name = 'catppuccin' },
+  { 'bluz71/vim-moonfly-colors', name = 'moonfly' },
+  { 'embark-theme/vim', name = 'embark' },
   'rebelot/kanagawa.nvim',
   'sainnhe/everforest',
 }
