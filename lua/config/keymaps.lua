@@ -45,9 +45,13 @@ vim.api.nvim_set_keymap("n", "<leader>ga", ":ChatGPTActAs<CR>", options)
 -- ToggleTerm - LazyGit
 -- vim.api.nvim_set_keymap("n", "<leader>tt", "<cmd>lua _TERMINAL_TOGGLE()<CR>", options)
 -- vim.api.nvim_set_keymap("t", "<leader>tt", "<cmd>lua _TERMINAL_TOGGLE()<CR>", options)
--- vim.api.nvim_set_keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", options)
--- vim.api.nvim_set_keymap("t", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", options)
 
 -- Copilot
 vim.api.nvim_set_keymap("n", "<leader>cd", ":Copilot disable<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>ce", ":Copilot enable<CR>", options)
+
+-- vim tmux navigator
+vim.api.nvim_set_keymap("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", options)
+vim.api.nvim_set_keymap("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", options)
+vim.api.nvim_set_keymap("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>", options)
+vim.api.nvim_set_keymap("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>", options)
