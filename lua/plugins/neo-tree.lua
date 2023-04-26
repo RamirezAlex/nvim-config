@@ -21,6 +21,7 @@ return {
     end,
     opts = function(_, opts)
       opts.use_default_mappings = false
+      opts.window.width = 48
       opts.window.mappings = {
         -- ["<space>"] = "toggle_node",
         ["<cr>"] = "open",
