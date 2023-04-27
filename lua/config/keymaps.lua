@@ -49,6 +49,8 @@ vim.api.nvim_set_keymap("n", "<leader>ga", ":ChatGPTActAs<CR>", options)
 -- Copilot
 vim.api.nvim_set_keymap("n", "<leader>cd", ":Copilot disable<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>ce", ":Copilot enable<CR>", options)
+vim.api.nvim_set_keymap("n", "<leader>cc", ":Copilot clear<CR>", options)
+vim.api.nvim_set_keymap("i", "<C-j>", [[copilot#Accept("\<CR>")]], { silent = true, script = true, expr = true })
 
 -- vim tmux navigator
 vim.api.nvim_set_keymap("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", options)
