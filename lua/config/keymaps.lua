@@ -24,7 +24,7 @@ vim.api.nvim_set_keymap("n", "<S-h>", ":bprevious<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", options)
 
 -- Close buffers
-vim.api.nvim_set_keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", options)
+vim.api.nvim_set_keymap("n", "<S-q>", "<cmd>bdelete!<CR>", options)
 
 -- Center screen on cursor
 vim.api.nvim_set_keymap("n", "n", "nzzzv", options)
@@ -42,14 +42,7 @@ vim.api.nvim_set_keymap("n", "<leader>qa", "<cmd>qa<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>gp", ":ChatGPT<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>ga", ":ChatGPTActAs<CR>", options)
 
--- ToggleTerm - LazyGit
--- vim.api.nvim_set_keymap("n", "<leader>tt", "<cmd>lua _TERMINAL_TOGGLE()<CR>", options)
--- vim.api.nvim_set_keymap("t", "<leader>tt", "<cmd>lua _TERMINAL_TOGGLE()<CR>", options)
-
 -- Copilot
-vim.api.nvim_set_keymap("n", "<leader>cd", ":Copilot disable<CR>", options)
-vim.api.nvim_set_keymap("n", "<leader>ce", ":Copilot enable<CR>", options)
-vim.api.nvim_set_keymap("n", "<leader>cc", ":Copilot clear<CR>", options)
 vim.api.nvim_set_keymap("i", "<C-j>", [[copilot#Accept("\<CR>")]], { silent = true, script = true, expr = true })
 
 -- vim tmux navigator
