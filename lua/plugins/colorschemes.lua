@@ -4,6 +4,12 @@ return {
   { "ellisonleao/gruvbox.nvim" },
   { "rose-pine/neovim", name = "rose-pine" },
   {
+    "sainnhe/sonokai",
+    config = function()
+      vim.g.sonokai_style = "atlantis" -- style options: default, andromeda, atlantis, maia, mirage, shusia, and default
+    end,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "catppuccin-mocha",
@@ -12,9 +18,10 @@ return {
       -- colorscheme = "terafox",
       -- colorscheme = "duskfox",
       -- colorscheme = "carbonfox",
-      colorscheme = "nightfox",
+      -- colorscheme = "nightfox",
       -- colorscheme = "nordfox",
       -- colorscheme = "tokyonight",
+      colorscheme = "sonokai",
     },
   },
 }

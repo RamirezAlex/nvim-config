@@ -43,10 +43,23 @@ vim.api.nvim_set_keymap("n", "<leader>gp", ":ChatGPT<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>ga", ":ChatGPTActAs<CR>", options)
 
 -- Copilot
-vim.api.nvim_set_keymap("i", "<C-j>", [[copilot#Accept("\<CR>")]], { silent = true, script = true, expr = true })
+vim.api.nvim_set_keymap(
+  "i",
+  "<C-j>",
+  [[copilot#Accept("\<CR>")]],
+  { noremap = true, silent = true, script = true, expr = true }
+)
 
 -- vim tmux navigator
 vim.api.nvim_set_keymap("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", options)
 vim.api.nvim_set_keymap("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", options)
 vim.api.nvim_set_keymap("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>", options)
 vim.api.nvim_set_keymap("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>", options)
+
+-- rust tools
+vim.api.nvim_set_keymap(
+  "n",
+  "R",
+  "<cmd>lua require'rust-tools'.hover_actions.hover_actions()<CR>",
+  { noremap = true, desc = "Show hover actions" }
+)

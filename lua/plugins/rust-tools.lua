@@ -74,7 +74,7 @@ return {
 
           -- whether the hover action window gets automatically focused
           -- default: false
-          auto_focus = false,
+          auto_focus = true,
         },
 
         -- all the opts to send to nvim-lspconfig
@@ -108,7 +108,7 @@ return {
         }, -- rust-analyer options
 
         -- debugging stuff
-        -- dap = { },
+        dap = {},
       },
       config = function(_, opts)
         require("rust-tools").setup(opts)
