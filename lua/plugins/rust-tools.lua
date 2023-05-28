@@ -1,3 +1,10 @@
+-- local mason_registry = require("mason-registry")
+--
+-- local codelldb = mason_registry.get_package("codelldb")
+-- local extension_path = codelldb:get_install_path() .. "/extension"
+-- local codelldb_path = extension_path .. "/adapter/codelldb"
+-- local liblldb_path = extension_path .. "/lldb/lib/liblldb.dylib"
+
 return {
   {
     "simrat39/rust-tools.nvim",
@@ -108,7 +115,9 @@ return {
         }, -- rust-analyer options
 
         -- debugging stuff
-        dap = {},
+        dap = {
+          -- adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path),
+        },
       },
       config = function(_, opts)
         require("rust-tools").setup(opts)
