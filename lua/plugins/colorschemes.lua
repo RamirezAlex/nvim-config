@@ -13,7 +13,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "catppuccin-mocha",
-      -- colorscheme = "gruvbox",
+      colorscheme = "gruvbox",
       -- colorscheme = "rose-pine",
       -- colorscheme = "terafox",
       -- colorscheme = "duskfox",
@@ -21,7 +21,7 @@ return {
       -- colorscheme = "nightfox",
       -- colorscheme = "nordfox",
       -- colorscheme = "tokyonight",
-      colorscheme = "sonokai",
+      -- colorscheme = "sonokai",
     },
   },
 }

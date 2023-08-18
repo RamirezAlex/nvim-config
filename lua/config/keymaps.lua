@@ -63,3 +63,14 @@ vim.api.nvim_set_keymap(
   "<cmd>lua require'rust-tools'.hover_actions.hover_actions()<CR>",
   { noremap = true, desc = "Show hover actions" }
 )
+
+-- flutter tools
+vim.api.nvim_set_keymap("n", "FR", "<cmd>FlutterRun<CR>", { noremap = true, desc = "Flutter Run" })
+
+-- telescope
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>fg",
+  "<cmd>lua require('telescope.builtin').live_grep()<CR>",
+  { noremap = true, desc = "Find string in project" }
+)
