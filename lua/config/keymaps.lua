@@ -74,3 +74,13 @@ vim.api.nvim_set_keymap(
   "<cmd>lua require('telescope.builtin').live_grep()<CR>",
   { noremap = true, desc = "Find string in project" }
 )
+
+-- rest.nvim mappings
+vim.api.nvim_set_keymap("n", "<leader>ht", "<Plug>RestNvim<CR>", { noremap = true, desc = "HTTP Request" })
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>hp",
+  "<Plug>RestNvimPreview<CR>",
+  { noremap = true, desc = "HTTP Request Preview" }
+)
+vim.api.nvim_set_keymap("n", "<leader>hl", "<Plug>RestNvimLast<CR>", { noremap = true, desc = "HTTP Request Last" })
