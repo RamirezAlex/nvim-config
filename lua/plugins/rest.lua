@@ -1,5 +1,6 @@
 return {
   "rest-nvim/rest.nvim",
+  lazy = true,
   requires = { "nvim-lua/plenary.nvim" },
   config = function()
     require("rest-nvim").setup({

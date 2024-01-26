@@ -1,15 +1,15 @@
 return {
-  { "EdenEast/nightfox.nvim" },
-  { "catppuccin/nvim", name = "catppuccin" },
-  { "ellisonleao/gruvbox.nvim" },
-  { "rose-pine/neovim", name = "rose-pine" },
-  { "sainnhe/gruvbox-material" },
-  {
-    "sainnhe/sonokai",
-    config = function()
-      vim.g.sonokai_style = "atlantis" -- style options: default, andromeda, atlantis, maia, mirage, shusia, and default
-    end,
-  },
+  -- { "EdenEast/nightfox.nvim" },
+  -- { "catppuccin/nvim", name = "catppuccin" },
+  -- { "ellisonleao/gruvbox.nvim" },
+  -- { "rose-pine/neovim", name = "rose-pine" },
+  -- { "sainnhe/gruvbox-material" },
+  -- {
+  --   "sainnhe/sonokai",
+  --   config = function()
+  --     vim.g.sonokai_style = "atlantis" -- style options: default, andromeda, atlantis, maia, mirage, shusia, and default
+  --   end,
+  -- },
   {
     "LazyVim/LazyVim",
     opts = {
@@ -21,9 +21,9 @@ return {
       -- colorscheme = "carbonfox",
       -- colorscheme = "nightfox",
       -- colorscheme = "nordfox",
-      -- colorscheme = "tokyonight",
+      colorscheme = "tokyonight",
       -- colorscheme = "sonokai",
-      colorscheme = "gruvbox-material",
+      -- colorscheme = "gruvbox-material",
     },
   },
 }
