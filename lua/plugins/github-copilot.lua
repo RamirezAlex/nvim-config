@@ -14,5 +14,5 @@ end, { nargs = 0 })
 vim.keymap.set("", "<leader>ct", ":CopilotToggle<CR>", { noremap = true, silent = true })
 
 return {
-  { "github/copilot.vim" },
+  "github/copilot.vim",
 }
