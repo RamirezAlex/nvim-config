@@ -6,5 +6,6 @@ return {
       "MunifTanjim/nui.nvim",
       "nvim-lua/plenary.nvim",
     },
+    disable_mouse = false,
   },
 }
