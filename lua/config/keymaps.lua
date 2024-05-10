@@ -76,14 +76,8 @@ vim.api.nvim_set_keymap(
 )
 
 -- rest.nvim mappings
-vim.api.nvim_set_keymap("n", "<leader>ht", "<Plug>RestNvim<CR>", { noremap = true, desc = "HTTP Request" })
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>hp",
-  "<Plug>RestNvimPreview<CR>",
-  { noremap = true, desc = "HTTP Request Preview" }
-)
-vim.api.nvim_set_keymap("n", "<leader>hl", "<Plug>RestNvimLast<CR>", { noremap = true, desc = "HTTP Request Last" })
+vim.api.nvim_set_keymap("n", "<leader>rr", "<cmd>Rest run<CR>", { noremap = true, desc = "Rest run request" })
+vim.api.nvim_set_keymap("n", "<leader>rl", "<cmd>Rest run last<CR>", { noremap = true, desc = "Rest run last" })
 
 -- hardtime toggle
 vim.api.nvim_set_keymap("n", "<leader>hd", "<cmd>Hardtime disable<CR>", { noremap = true, desc = "Hardtime disable" })
