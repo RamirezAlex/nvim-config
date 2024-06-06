@@ -82,3 +82,6 @@ vim.api.nvim_set_keymap("n", "<leader>rl", "<cmd>Rest run last<CR>", { noremap =
 -- hardtime toggle
 vim.api.nvim_set_keymap("n", "<leader>hd", "<cmd>Hardtime disable<CR>", { noremap = true, desc = "Hardtime disable" })
 vim.api.nvim_set_keymap("n", "<leader>he", "<cmd>Hardtime enable<CR>", { noremap = true, desc = "Hardtime enable" })
+
+-- lazydocker
+vim.api.nvim_set_keymap("n", "<leader>k", "<cmd>LazyDocker<CR>", { noremap = true, desc = "LazyDocker" })
