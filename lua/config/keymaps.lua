@@ -70,7 +70,7 @@ vim.api.nvim_set_keymap("n", "FR", "<cmd>FlutterRun<CR>", { noremap = true, desc
 -- telescope
 vim.api.nvim_set_keymap(
   "n",
-  "<leader>fg",
+  "<leader>fz",
   "<cmd>lua require('telescope.builtin').live_grep()<CR>",
   { noremap = true, desc = "Find string in project" }
 )

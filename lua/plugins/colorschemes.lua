@@ -1,9 +1,9 @@
 return {
   -- { "EdenEast/nightfox.nvim" },
-  -- { "catppuccin/nvim", name = "catppuccin" },
+  { "catppuccin/nvim", name = "catppuccin" },
   -- { "ellisonleao/gruvbox.nvim" },
   -- { "rose-pine/neovim", name = "rose-pine" },
-  { "sainnhe/gruvbox-material" },
+  -- { "sainnhe/gruvbox-material" },
   -- {
   --   "sainnhe/sonokai",
   --   config = function()
@@ -13,7 +13,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "catppuccin-mocha",
+      colorscheme = "catppuccin-mocha",
       -- colorscheme = "gruvbox",
       -- colorscheme = "rose-pine",
       -- colorscheme = "terafox",
@@ -23,7 +23,7 @@ return {
       -- colorscheme = "nordfox",
       -- colorscheme = "tokyonight",
       -- colorscheme = "sonokai",
-      colorscheme = "gruvbox-material",
+      -- colorscheme = "gruvbox-material",
     },
   },
 }
