@@ -64,9 +64,6 @@ vim.api.nvim_set_keymap(
   { noremap = true, desc = "Show hover actions" }
 )
 
--- flutter tools
-vim.api.nvim_set_keymap("n", "FR", "<cmd>FlutterRun<CR>", { noremap = true, desc = "Flutter Run" })
-
 -- telescope
 vim.api.nvim_set_keymap(
   "n",
