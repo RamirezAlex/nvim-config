@@ -4,12 +4,12 @@ local function get_codelldb_paths()
     return nil, nil
   end
 
-  if not mason_registry.has_package("codelldb") then
+  if not mason_registry.is_installed("codelldb") then
     return nil, nil
   end
 
-  local codelldb = mason_registry.get_package("codelldb")
-  local extension_path = codelldb:get_install_path() .. "/extension"
+  local install_path = vim.fn.stdpath("data") .. "/mason/packages/codelldb"
+  local extension_path = install_path .. "/extension"
   local codelldb_path = extension_path .. "/adapter/codelldb"
   local liblldb_path = extension_path .. "/lldb/lib/liblldb.dylib"
 
