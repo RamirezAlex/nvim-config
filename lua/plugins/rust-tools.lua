@@ -20,8 +20,8 @@ return {
   {
     "simrat39/rust-tools.nvim",
     dependencies = {
-      "williamboman/mason.nvim",
-      "williamboman/mason-lspconfig.nvim",
+      "mason-org/mason.nvim",
+      "mason-org/mason-lspconfig.nvim",
       "neovim/nvim-lspconfig",
       "nvim-lua/plenary.nvim",
     },

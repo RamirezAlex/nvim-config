@@ -1,3 +1,6 @@
+-- CodeCompanion is currently disabled
+return {}
+
 -- local mapping_key_prefix = vim.g.ai_prefix_key or "<leader>m"
 --
 -- require("which-key").register({
