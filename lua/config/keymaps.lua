@@ -64,11 +64,11 @@ vim.api.nvim_set_keymap(
   { noremap = true, desc = "Show hover actions" }
 )
 
--- telescope
+-- fzf-lua
 vim.api.nvim_set_keymap(
   "n",
   "<leader>fs",
-  "<cmd>lua require('telescope.builtin').live_grep()<CR>",
+  "<cmd>lua require('fzf-lua').live_grep()<CR>",
   { noremap = true, desc = "Find string in project" }
 )
 
