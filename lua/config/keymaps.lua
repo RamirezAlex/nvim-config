@@ -4,15 +4,7 @@
 
 local options = { noremap = true }
 
--- Change panes on vim ctrl mappings
-vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", options)
-vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", options)
-vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", options)
-vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", options)
-
 -- Escape maps to a rolling jk
-vim.api.nvim_set_keymap("i", "jk", "<ESC>", options)
-vim.api.nvim_set_keymap("i", "jj", "<ESC>", options)
 vim.api.nvim_set_keymap("i", "jk", "<ESC>", options)
 vim.api.nvim_set_keymap("i", "jj", "<ESC>", options)
 
@@ -37,10 +29,6 @@ vim.api.nvim_set_keymap("n", "<leader>ww", "<cmd>w<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>wq", "<cmd>wq<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>q", "<cmd>q<CR>", options)
 vim.api.nvim_set_keymap("n", "<leader>qa", "<cmd>qa<CR>", options)
-
--- ChatGPT
-vim.api.nvim_set_keymap("n", "<leader>gp", ":ChatGPT<CR>", options)
-vim.api.nvim_set_keymap("n", "<leader>ga", ":ChatGPTActAs<CR>", options)
 
 -- Copilot
 vim.api.nvim_set_keymap(
@@ -71,14 +59,3 @@ vim.api.nvim_set_keymap(
   "<cmd>lua require('fzf-lua').live_grep()<CR>",
   { noremap = true, desc = "Find string in project" }
 )
-
--- rest.nvim mappings
-vim.api.nvim_set_keymap("n", "<leader>rr", "<cmd>Rest run<CR>", { noremap = true, desc = "Rest run request" })
-vim.api.nvim_set_keymap("n", "<leader>rl", "<cmd>Rest run last<CR>", { noremap = true, desc = "Rest run last" })
-
--- hardtime toggle
-vim.api.nvim_set_keymap("n", "<leader>hd", "<cmd>Hardtime disable<CR>", { noremap = true, desc = "Hardtime disable" })
-vim.api.nvim_set_keymap("n", "<leader>he", "<cmd>Hardtime enable<CR>", { noremap = true, desc = "Hardtime enable" })
-
--- lazydocker
-vim.api.nvim_set_keymap("n", "<leader>k", "<cmd>LazyDocker<CR>", { noremap = true, desc = "LazyDocker" })
