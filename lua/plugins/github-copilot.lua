@@ -1,4 +1,4 @@
-local copilot_enabled = true
+local copilot_enabled = false
 
 vim.api.nvim_create_user_command("CopilotToggle", function()
   if copilot_enabled then
@@ -14,5 +14,5 @@ end, { nargs = 0 })
 vim.keymap.set("", "<leader>ct", ":CopilotToggle<CR>", { noremap = true, silent = true })
 
 return {
-  "github/copilot.vim",
+  -- "github/copilot.vim",
 }
